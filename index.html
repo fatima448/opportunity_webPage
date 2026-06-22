@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فرص خضراء</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-content">
+        <div class="logo">
+          <img src="images/original.png" alt="شعار فرص خضراء" />
+        </div>
+
+        <nav class="nav">
+          <a href="#" class="active">الفرص</a>
+          <a href="#">عن المنصة</a>
+          <a href="#">تواصل معنا</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="circle circle-one"></div>
+      <div class="circle circle-two"></div>
+
+      <div class="container hero-content">
+        <span class="badge">+800 فرصة ومنحة خضراء</span>
+
+        <h1>
+          اكتشف فرصتك القادمة<br />
+          في عالم الاستدامة
+        </h1>
+
+        <p>
+          منح وتدريبات ومسابقات بيئية مخصصة لشباب الوطن العربي. ابحث وابدأ رحلتك
+          الخضراء اليوم.
+        </p>
+      </div>
+    </section>
+
+    <section class="filters container">
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass icon"></i>
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="ابحث عن فرصة بالعنوان..."
+        />
+      </div>
+
+      <div class="filter-row">
+        <div class="filter-item">
+          <label for="typeFilter">نوع الفرصة</label>
+
+          <select id="typeFilter">
+            <option value="all">جميع الأنواع</option>
+            <option value="منحة">منحة</option>
+            <option value="تدريب">تدريب</option>
+            <option value="مسابقة">مسابقة</option>
+          </select>
+        </div>
+
+        <div class="filter-item">
+          <label for="fundingFilter">حالة التمويل</label>
+
+          <select id="fundingFilter">
+            <option value="all">جميع الحالات</option>
+            <option value="ممولة بالكامل">ممولة بالكامل</option>
+            <option value="ممولة جزئياً">ممولة جزئياً</option>
+            <option value="غير ممولة">غير ممولة</option>
+          </select>
+        </div>
+
+        <button id="resetBtn" class="reset">إعادة الضبط</button>
+      </div>
+
+    </section>
+
+    <main class="container">
+      <div class="cards" id="cardsGrid"></div>
+
+      <div class="no-results" id="emptyState" hidden>
+        <p>لا توجد فرص مطابقة لبحثك حالياً 🌱</p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 فرص خضراء - جميع الحقوق محفوظة</p>
+        <p class="tagline">معاً نحو مستقبل أخضر 🌿</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
