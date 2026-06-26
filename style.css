@@ -186,13 +186,10 @@ button {
   margin-top: -45px;
   position: relative;
   z-index: 5;
-
   background: var(--white);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);
-
   padding: 26px 28px;
-
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -213,13 +210,10 @@ button {
 #searchInput {
   width: 100%;
   padding: 14px 48px 14px 16px;
-
   border: 1.5px solid #e3e9e4;
   border-radius: var(--radius-md);
-
   font-size: 1rem;
   outline: none;
-
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
@@ -250,17 +244,13 @@ button {
 
 .filter-item select {
   padding: 11px 14px;
-
   border: 1.5px solid #e3e9e4;
   border-radius: var(--radius-sm);
-
   background: var(--white);
   color: var(--text-dark);
   font-size: 0.95rem;
-
   outline: none;
   cursor: pointer;
-
   transition: border-color 0.2s;
 }
 
@@ -271,14 +261,11 @@ button {
 .reset {
   background: var(--orange-100);
   color: var(--orange-600);
-
   padding: 11px 22px;
   border-radius: var(--radius-sm);
-
   font-size: 0.9rem;
   font-weight: 700;
   white-space: nowrap;
-
   transition: background 0.2s, transform 0.15s;
 }
 

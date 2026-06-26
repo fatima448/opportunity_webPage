@@ -129,12 +129,6 @@ const icons = {
     </svg>
   `,
 
-  leaf: `
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-      <path d="M12 2C9 6 7 9 7 13a5 5 0 0010 0c0-4-2-7-5-11z"
-        fill="currentColor"/>
-    </svg>
-  `
 };
 
 // ===================== Funding Classes =====================
@@ -164,10 +158,6 @@ function createCard(opportunity) {
     <div class="card-header">
       <span class="type-badge badge-${opportunity.type}">
         ${opportunity.type}
-      </span>
-
-      <span class="card-icon">
-        ${icons.leaf}
       </span>
     </div>
 
@@ -217,8 +207,6 @@ function renderCards(list) {
     cards.appendChild(createCard(opportunity));
   });
 
-  resultText.textContent =
-    `عدد الفرص المعروضة: ${list.length} من أصل ${opportunitiesData.length}`;
 }
 
 // ===================== Filter Logic =====================
